@@ -24,3 +24,5 @@ Where script to run is the script that needs to be run on the workspace. An exam
 
 **NOTE**: The script that is run on the workspace needs to be loaded as part of a study that is linked to the workspace.
 
+Make sure the API key (`bearer_token` in `run_job.sh`) is updated everytime you want to use the script.
+
