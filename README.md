@@ -5,13 +5,13 @@ This repository contains some handy tools for working with Service Workbench.
 For running non-interactive jobs, there are scripts that help you call the API and programmatically 
 do what you have been doing through the website.
 
-### Spin up a new workspace
+#### Spin up a new workspace
 TBD
 
-### Shutdown the workspace
+#### Shutdown the workspace
 TBD
 
-### Run a script on an existing machine
+#### Run a script on an existing machine
 Assuming that a workspace is already created and is in running state, you can use the following script
 to run a non-interactive job on that instance.
 ```
