@@ -17,9 +17,9 @@ project_id = Config.project_id
 study_id = Config.study_id
 study_location = Config.study_location
 keypair_file_path = Config.keypair_file_path
-base_url = Config.base_url
 
 headers = {'Authorization': f'Bearer {bearer_token}', 'Content-Type': 'application/json'}
+base_url = f"https://{instance_id}.execute-api.ap-southeast-2.amazonaws.com/dev/api"
 
 
 def check_auth_key():
@@ -67,10 +67,12 @@ def check_workspace_status(ws_name):
         workspace_id = matching_ws['id']
         status = matching_ws['status']
         print('Status is: ' + status)
-        if status == 'PENDING':
+        if status in ['PENDING', 'STARTING']:
             time.sleep(30)
         elif status == 'STOPPED':
             print('Workspace is stopped, staring it')
+            start_instance(workspace_id)
+            time.sleep(30)
         else:
             break
     if status == 'COMPLETED':
