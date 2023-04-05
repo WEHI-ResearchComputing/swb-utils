@@ -171,13 +171,13 @@ if __name__ == '__main__':
 
     parser.add_argument('-j', '--job', help='The script of the job to run', required=True)
     parser.add_argument('-w', '--workspace', help='The name of the existing workspace to use')
-    parser.add_argument('-s', '--shutdown', type=bool, help='Shutdown the instance after running the job', default=True)
+    parser.add_argument('-s', '--shutdown', type=int, help='Shutdown the instance after running the job', default=1)
 
     args = parser.parse_args()
     print(f'Running the job with the following parameters: ', args)
 
-    run_job(
-        job_to_run=args.job,
-        workspace_name=args.workspace,
-        shutdown=args.shutdown
-    )
+    # run_job(
+    #     job_to_run=args.job,
+    #     workspace_name=args.workspace,
+    #     shutdown=args.shutdown
+    # )
