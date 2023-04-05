@@ -1,0 +1,16 @@
+class Config:
+    bearer_token = 'eyJraWQiOiJWZ2tsbFVuTVJ0bFN4ODA1ZUM2N1QzbWxoYlRrSVQ2cCtiNEJaNWlvZlprPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoiLUdJb0RpUERQYVhuZXJPWnI5RWlLdyIsInN1YiI6IjczOGM3MzdiLTFjNTMtNGQ0ZS1hNjMyLThhNGY4MDg0YzYxYSIsImNvZ25pdG86Z3JvdXBzIjpbImFwLXNvdXRoZWFzdC0yX3RVMU5mcnFPVF9BQUQiXSwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTIuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTJfdFUxTmZycU9UIiwiY29nbml0bzp1c2VybmFtZSI6IkFBRF9yZXp2YW5pLm5Ad2VoaS5lZHUuYXUiLCJnaXZlbl9uYW1lIjoiTmFiaSIsIm9yaWdpbl9qdGkiOiIyOGRiMDk5Yy01ZTNiLTQwNzktYTVjYS1kODMwYzRiOThkY2EiLCJhdWQiOiIybTF2bjc2bmxjcnFmZ2J0cTNqdDU2aGhpcyIsImlkZW50aXRpZXMiOlt7InVzZXJJZCI6InJlenZhbmkubkB3ZWhpLmVkdS5hdSIsInByb3ZpZGVyTmFtZSI6IkFBRCIsInByb3ZpZGVyVHlwZSI6IlNBTUwiLCJpc3N1ZXIiOiJodHRwczpcL1wvc3RzLndpbmRvd3MubmV0XC9hYTdjNzJlMi1jNWNmLTRhNDAtYTIyYS1hNTg1YzA0Y2EwN2NcLyIsInByaW1hcnkiOiJ0cnVlIiwiZGF0ZUNyZWF0ZWQiOiIxNjc5OTYzOTQwOTE3In1dLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTY4MDY4NTUyOSwibmFtZSI6InJlenZhbmkubkB3ZWhpLmVkdS5hdSIsImV4cCI6MTY4MDY4OTEyOSwiaWF0IjoxNjgwNjg1NTI5LCJmYW1pbHlfbmFtZSI6IlJlenZhbmkiLCJqdGkiOiJmNDA3OWQ0OS0zYWUyLTQ4YjYtYjc3Yy02ZWUxNWVhNGE1YjAiLCJlbWFpbCI6InJlenZhbmkubkB3ZWhpLmVkdS5hdSJ9.hxK1psNlGygtPNiF8i72WV1z0m6saz0_XRo1iEX3-CcYirM2paBSDj0dvOxrwevJM1raJSjjPnjeMOltnNiqx4M9RM2dHbPc_-AjFCdjBWEUnONDG9zk2snI1e5m1PXLZ7_ZeqzGhqFQj93Qlf6F2IQP5SKUi4Ax79K_t7YDut4hEXDuqkbdFGiu1IvVA3fYI1K0YADzHW58RGimGX3XQ1stTwFi6VU9vSN0kxorTu0rigNS1wBZr0OMP4obNgwsc8hExSqP-6Uf9Tklykx17SmyzH3UmN5gQNB1Vfz6732l7FDTyE4t31Eq_A0z_6V82YNk1iytrCFMVb_aYN4wTg'
+    key_pair_name = 'test-nabi-2'
+    instance_id = {
+        'dev': 'h7dnv7rse8',  # dev SWB
+        'prod': '6xw3zhvop9'  # prod SWB
+    }
+
+    env_type_id = "prod-7hwti73eyr3o2-pa-egwcobd45duug"
+    env_config_id = "ec2_config"
+    project_id = "Colonial"
+    study_id = "test-proteomics"
+    study_location = "studies/test-proteomics"
+    keypair_file_path = '/Users/nabi.rezvani/Downloads/'
+    base_url = f"https://{instance_id}.execute-api.ap-southeast-2.amazonaws.com/dev/api"
+
