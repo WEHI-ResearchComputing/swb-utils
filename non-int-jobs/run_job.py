@@ -176,8 +176,8 @@ if __name__ == '__main__':
     args = parser.parse_args()
     print(f'Running the job with the following parameters: ', args)
 
-    # run_job(
-    #     job_to_run=args.job,
-    #     workspace_name=args.workspace,
-    #     shutdown=args.shutdown
-    # )
+    run_job(
+        job_to_run=args.job,
+        workspace_name=args.workspace,
+        shutdown=args.shutdown
+    )
